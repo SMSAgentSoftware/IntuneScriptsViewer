@@ -7,7 +7,7 @@
     <ProjectGuid>{8B5B5B71-A6B3-4AD7-AC83-F32EAB7355EC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Endpoint_Manager_Scripts_Editor</RootNamespace>
-    <AssemblyName>Script Viewer for Microsoft Endpoint Manager</AssemblyName>
+    <AssemblyName>Script Viewer for Microsoft Intune</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -116,7 +116,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Fody">
-      <Version>6.6.1</Version>
+      <Version>6.6.4</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -124,7 +124,7 @@
       <Version>2.4.9</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Identity.Client">
-      <Version>4.43.2</Version>
+      <Version>4.47.2</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.1</Version>

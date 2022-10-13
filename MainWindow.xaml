@@ -6,7 +6,7 @@
         xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:Endpoint_Manager_Scripts_Editor"
         mc:Ignorable="d"
-        Title="Script Viewer for Microsoft Endpoint Manager" Height="500" Width="1000" Background="Black" ShowTitleBar="False" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanResizeWithGrip" ShowMaxRestoreButton="True" ShowMinButton="True" ShowCloseButton="True" MouseLeftButtonDown="MetroWindow_MouseLeftButtonDown">
+        Title="Script Viewer for Microsoft Intune" Height="500" Width="1000" Background="Black" ShowTitleBar="False" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanResizeWithGrip" ShowMaxRestoreButton="True" ShowMinButton="True" ShowCloseButton="True" MouseLeftButtonDown="MetroWindow_MouseLeftButtonDown">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -15,9 +15,9 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Script Viewer for Microsoft Endpoint Manager" Foreground="#BB86FC" FontFamily="Consolas" FontWeight="Bold" FontSize="22" Margin="5" HorizontalAlignment="Center"/>
+        <TextBlock Text="Script Viewer for Intune" Foreground="#BB86FC" FontFamily="Consolas" FontWeight="Bold" FontSize="22" Margin="5" HorizontalAlignment="Center"/>
         <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <Button Content="Connect Endpoint Manager" Click="Btn_ConnectIntune" Margin="5" Foreground="#03DAC5" FontSize="12" FontFamily="Consolas"/>
+            <Button Content="Connect Intune" Click="Btn_ConnectIntune" Margin="5" Foreground="#03DAC5" FontSize="12" FontFamily="Consolas"/>
             <ComboBox Name="ComboBox" Width="500" Margin="5" FontSize="14" FontFamily="Consolas" ItemsSource="{Binding comboSource}" mah:TextBoxHelper.Watermark="Select Script" SelectionChanged="ComboBox_SelectionChanged"/>
         </StackPanel>
         <TextBox Grid.Row="2" Name="ScriptWindow" Height="Auto" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="14" FontFamily="Consolas" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" IsReadOnly="True"/>
@@ -40,7 +40,7 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" Name="Status" Text="Connect to Endpoint Manager" Foreground="#03DAC5" VerticalAlignment="Center" Margin="5" FontSize="14" FontFamily="Consolas"/>
+            <TextBlock Grid.Column="0" Name="Status" Text="Connect to Intune" Foreground="#03DAC5" VerticalAlignment="Center" Margin="5" FontSize="14" FontFamily="Consolas"/>
             <StackPanel Grid.Column="1" Orientation="Horizontal">
                 <TextBlock Name="Tenant" Text="TenantId: " Foreground="#03DAC5" VerticalAlignment="Center" Margin="5" FontSize="14" FontFamily="Consolas"/>
                 <TextBlock Name="Account" Text="Account: " Foreground="#03DAC5" VerticalAlignment="Center" Margin="5,5,10,5" FontSize="14" FontFamily="Consolas"/>

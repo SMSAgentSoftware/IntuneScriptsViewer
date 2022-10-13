@@ -15,7 +15,7 @@ namespace Endpoint_Manager_Scripts_Editor
 {
     public partial class MainWindow
     {
-        string[] scopes = new string[] { "DeviceManagementConfiguration.ReadWrite.All" };
+        readonly string[] scopes = new string[] { "DeviceManagementConfiguration.ReadWrite.All" };
         private RootValue scripts;
         private string authToken;
 
@@ -105,7 +105,7 @@ namespace Endpoint_Manager_Scripts_Editor
 
         private async void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            int index = scripts.value.FindIndex(x => x.displayName == ComboBox.SelectedItem);
+            int index = scripts.value.FindIndex(x => x.displayName == ComboBox.SelectedItem as string);
             string id = scripts.value[index].id;
             string graphAPIEndpoint = "https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts" + "/" + id;
             var result = await GetHttpContentWithToken(graphAPIEndpoint, authToken);
