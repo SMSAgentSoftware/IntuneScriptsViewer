@@ -1,5 +1,5 @@
 # Script Viewer for Microsoft Intune
-App to view scripts in Microsoft Intune. Requires the [Microsoft Intune PowerShell](https://github.com/microsoft/Intune-PowerShell-SDK) app to be present and consented in your tenants Azure AD as well as the appropriate permissions in Intune for your user account.
+App to view scripts in Microsoft Intune. Requires the [Microsoft Graph PowerShell SDK](https://learn.microsoft.com/en-us/powershell/microsoftgraph/?view=graph-powershell-1.0) Entra app to be present and consented in your tenant with the *DeviceManagementConfiguration.Read.All* delegated permission.
 
 
 ![screenshot](ScreenshotNew.png?raw=true)
