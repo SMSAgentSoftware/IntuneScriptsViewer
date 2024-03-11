@@ -15,7 +15,7 @@ namespace Endpoint_Manager_Scripts_Editor
 {
     public partial class MainWindow
     {
-        readonly string[] scopes = new string[] { "DeviceManagementConfiguration.ReadWrite.All" };
+        readonly string[] scopes = new string[] { "DeviceManagementConfiguration.Read.All" };
         private RootValue scripts;
         private string authToken;
 
